@@ -1,4 +1,4 @@
-- name: variables
+- name: variables-1
   hosts: localhost
   vars: # play level variables
     course: ansible
@@ -8,7 +8,7 @@
   - name: print information-1
     ansible.builtin.debug:
       msg: "Hi, am learning {{course}} my self itsef from seeing {{source}} videos, I am practicing daily {{duration}}"
-  tasks: 
+      
   - name: print information-2
     vars: # Task level variables
       course: terraform
