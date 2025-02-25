@@ -1,4 +1,4 @@
-- name: variables-1
+- name: variables from tasks level
   hosts: localhost
   vars: # play level variables
     course: ansible
