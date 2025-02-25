@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
   vars:
-    course: ansible
-    source: youtube
-    duration: 180min
+    course: terraform
+    source: youtube and linked-in
+    duration: 230min
   tasks: 
   - name: print information
     ansible.builtin.debug:
