@@ -1,5 +1,5 @@
 - name: PLAY-1
-  hosts: webq
+  hosts: wq
   tasks:
   - name: PLAY-1 and TASK-1
     ansible.builtin.debug:
