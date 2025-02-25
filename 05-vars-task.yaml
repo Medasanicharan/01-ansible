@@ -6,13 +6,13 @@
     duration: 180min
   tasks: 
   - name: print information-1
-    ansible.builtin.debug:
-      msg: "Hi, am learning {{course}} my self itsef from seeing {{source}} videos, I am practicing daily {{duration}}"
-      
-  - name: print information-2
     vars: # Task level variables
       course: terraform
       source: youtube and linked-in
       duration: 230min
+    ansible.builtin.debug:
+      msg: "Hi, am learning {{course}} my self itsef from seeing {{source}} videos, I am practicing daily {{duration}}"
+
+  - name: print information-2
     ansible.builtin.debug:
       msg: "Hi, am learning {{course}} my self itsef from seeing {{source}} videos, I am practicing daily {{duration}}"
