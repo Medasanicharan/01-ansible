@@ -1,0 +1,10 @@
+- name: variables
+  hosts: localhost
+  vars:
+  course: ansible
+  source: youtube
+  duration: 180min
+  tasks: 
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, am learning {{course}} my self itsef from seeing {{source}} videos, I am practicing daily {{duration}}"
