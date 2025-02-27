@@ -1,7 +1,7 @@
 - name: variable preference 
   hosts: localhost
-  vars:
-    WISHES: Night11
+  # vars:
+  #   WISHES: Night11
   vars_files:
   - vars.yaml
   # vars_prompt:
@@ -19,4 +19,4 @@
 # 2.Prompt
 # 3.task
 # 4.files
-# 5.
+# 5.vars
