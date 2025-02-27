@@ -12,5 +12,5 @@
   - name: check preference
     vars:
       WISHES : Night15
-    ansible.buitin.dnf:
+    ansible.builtin.dnf:
       msg: "Hello, Good {{WISHES}}" 
