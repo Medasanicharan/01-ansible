@@ -1,16 +1,16 @@
 - name: data types
   hosts: localhost
   vars: 
-  Course: DevOps with AWS # string
-  Tools: # list
-  - Linux
-  - Shell
-  - Ansible
-  Experience: # map
-    DevOps: 3 # number
-    AWS: 2
-    Docker: 1
-  Real-Project: true #boolean
+    Course: DevOps with AWS # string
+    Tools: # list
+    - Linux
+    - Shell
+    - Ansible
+    Experience: # map
+      DevOps: 3 # number
+      AWS: 2
+      Docker: 1
+    Real-Project: true #boolean
 
   tasks:
   - name: print variables
