@@ -5,5 +5,5 @@
     ansible.builtin.command: id expense
 
   - name: say hello
-    ansible.builtin.dbug:
+    ansible.builtin.debug:
       msg: "hello"
