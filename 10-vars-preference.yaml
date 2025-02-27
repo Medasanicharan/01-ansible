@@ -1,0 +1,16 @@
+- name: variable preference 
+  hosts: localhost
+  vars:
+    WISHES : Night11
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: WISHES
+  prompt: please enter your password
+  private: true
+  tasks: 
+  - name: check preference
+    vars:
+      WISHES : Night15
+    ansible.buitin.dnf:
+      msg: "Hello, Good {{WISHES}}" 
