@@ -10,11 +10,12 @@
   #   private: false
   tasks: 
   - name: check preference
-    vars:
-     WISHES: Night15 
+    # vars:
+    #  WISHES: Night15 
     ansible.builtin.debug:
       msg: "Hello, Good {{WISHES}}" 
 
 # 1.Arguments
 # 2.Prompt
-# 3.
+# 3.task
+# 4.
