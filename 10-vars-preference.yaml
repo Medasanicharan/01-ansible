@@ -1,13 +1,13 @@
 - name: variable preference 
   hosts: localhost
   vars:
-    WISHES: Night from play level
+    # WISHES: Night from play level
   vars_files:
-  - vars.yaml
+   - vars.yaml
   vars_prompt:
-  - name: WISHES
-    prompt: please enter your wishes
-    private: false
+  # - name: WISHES
+  #   prompt: please enter your wishes
+  #   private: false
   tasks: 
   - name: check preference
     # vars:
@@ -16,8 +16,8 @@
       msg: "Hello, Good {{WISHES}}" 
 
 # 1.Arguments
-# 2.Prompt
-# 3.task
-# 4.files
-# 5.vars
+# 2.task
+# 3.files
+# 4.Prompt
+# 5.play level
 # 6.inventory
