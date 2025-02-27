@@ -7,7 +7,7 @@
     ignore_errors: true
 
   - name: print user info
-    ansibl.builtin.debug:
+    ansible.builtin.debug:
       msg: "User info: {{USER}}"
 
   - name: say hello
