@@ -6,7 +6,7 @@
   - vars.yaml
   vars_prompt:
   - name: WISHES
-    prompt: please enter your password
+    prompt: please enter your wishes
     private: true
   tasks: 
   - name: check preference
@@ -14,3 +14,6 @@
       WISHES: Night15 
     ansible.builtin.debug:
       msg: "Hello, Good {{WISHES}}" 
+
+# 1.Arguments
+# 2.
