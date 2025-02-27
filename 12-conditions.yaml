@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: check user exist or not
-    ansible.builtn.command: id expense
+    ansible.builtin.command: id expense
 
   - name: say hello
     ansible.builtin.dbug:
