@@ -13,7 +13,7 @@
   tasks:
   - name: convert into upper case
     ansible.builtin.debug:
-      msg: "Hello {{greeting| upper}}"
+      msg: "Hello {{greeting | upper}}"
 
 - name: lower case
   hosts: localhost
@@ -22,4 +22,22 @@
   tasks:
   - name: convert into lower case
     ansible.builtin.debug:
-      msg: "Hello {{greeting| lower}}"
+      msg: "Hello {{greeting | lower}}"
+
+- name: remove duplicates
+  hosts: localhost
+  vars:
+    numbers: [1, 2, 2, 4, 5, 4, 7, 8, 9, 8, 5, 4]
+  tasks:
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "Hello {{numbers | unique}}"
+
+- name: min and max
+  hosts: localhost
+  vars:
+    ages: [71, 62, 82, 24, 95, 54, 27, 18, 98, 58, 45, 74]
+  tasks:
+  - name: print min and max ages
+    ansible.builtin.debug:
+      msg: "min age: {{ages | min}}, max age: {{ages | max}}"
