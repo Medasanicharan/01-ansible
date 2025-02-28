@@ -22,7 +22,7 @@
   tasks:
   - name: convert into lower case
     ansible.builtin.debug:
-      msg: "Hello {{greeting | lower}}"
+      msg: "{{greeting | lower}}"
 
 - name: remove duplicates
   hosts: localhost
@@ -41,3 +41,19 @@
   - name: print min and max ages
     ansible.builtin.debug:
       msg: "min age: {{ages | min}}, max age: {{ages | max}}"
+
+- name: convert dictinary into items/list
+  hosts: localhost
+  vars:
+    my_dict:
+      Course: Ansible
+      Name: charan
+      Time: 130min
+  tasks:
+  - name: print before convert dictinary into items/list
+    ansible.builtin.debug:
+      msg: " {{my_dict}}"
+
+  - name: print after convert dictinary into items/list
+    ansible.builtin.debug:
+      msg: " {{my_dict | dict2items}}"
